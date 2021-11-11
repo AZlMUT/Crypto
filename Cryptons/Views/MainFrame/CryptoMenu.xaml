@@ -1,0 +1,82 @@
+﻿<Page x:Class="Cryptons.Views.MainFrame.CryptoMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Cryptons.Views.MainFrame"
+      mc:Ignorable="d"
+      Title="CryptoMenu" Height="640" Width="1000">
+
+    <Grid>
+        <Button
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            ToolTip="Resource name: MaterialDesignRaisedLightDarkButton"
+            Content="Шифр Цезаря" 
+            Margin="28,51,0,0"
+            Height="52" Tag="1" Click="OpenForm" HorizontalAlignment="Left" Width="200" VerticalAlignment="Top"/>
+        <Button
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Width="200"
+            ToolTip="Resource name: MaterialDesignRaisedLightDarkButton"
+            Content="Шифр Виженера" HorizontalAlignment="Right"
+            Margin="0,108,772,0" VerticalAlignment="Top"
+            Height="52" Tag="2" Click="OpenForm"/>
+        <Button
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Width="200"
+            ToolTip="Resource name: MaterialDesignRaisedLightDarkButton"
+            Content="Шифр Перестановки" HorizontalAlignment="Right" 
+            Margin="0,165,772,0" VerticalAlignment="Top"
+            Height="52" Tag="3" Click="OpenForm"/>
+        <Button
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Width="200"
+            ToolTip="Resource name: MaterialDesignRaisedLightDarkButton"
+            Content="Хеширование" HorizontalAlignment="Right" 
+            Margin="0,222,772,0" VerticalAlignment="Top"
+            Height="52" Tag="4" Click="OpenForm"/>
+        <Button
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Width="200"
+            ToolTip="Resource name: MaterialDesignRaisedLightDarkButton"
+            Content="QR-код" HorizontalAlignment="Right" 
+            Margin="0,279,772,0" VerticalAlignment="Top" 
+            Height="52" Tag="5" Click="OpenForm"/>
+        <Button
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Width="200"
+            ToolTip="Resource name: MaterialDesignRaisedLightDarkButton"
+            Content="Цифровая подпись" HorizontalAlignment="Right" 
+            Margin="0,336,772,0" VerticalAlignment="Top"
+            Height="52" Tag="6" Click="OpenForm"/>
+        <Button
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Width="200"
+            ToolTip="Resource name: MaterialDesignRaisedLightDarkButton"
+            Content="RSA-шифрование" HorizontalAlignment="Right"
+            Margin="0,393,772,0" VerticalAlignment="Top"
+            Height="52" Tag="7" Click="OpenForm"/>
+        <Button
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Width="200"
+            ToolTip="Resource name: MaterialDesignRaisedLightDarkButton"
+            Content="DES-шифрование" HorizontalAlignment="Right" 
+            Margin="0,450,772,0" VerticalAlignment="Top"
+            Height="52" Tag="8" Click="OpenForm"/>
+        <Button
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            ToolTip="Resource name: MaterialDesignRaisedLightDarkButton"
+            Content="Настройки"
+            Margin="28,507,0,0"
+            Height="52" Tag="9" Click="OpenForm" HorizontalAlignment="Left" Width="201" VerticalAlignment="Top"/>
+
+        <Frame 
+            x:Name="ContentView"
+            ContentRendered="Rendered"
+            Content="" 
+            HorizontalAlignment="Left" 
+            Margin="256,8,0,32" Width="700"
+            Height="600" Panel.ZIndex="1"/>
+
+    </Grid>
+</Page>

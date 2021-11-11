@@ -1,0 +1,51 @@
+﻿<Page x:Class="Cryptons.Views.Crypts.SettingForm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Cryptons.Views.Crypts"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="700"
+      Title="SettingForm"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="#12182C"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+      >
+
+    <Grid>
+        <Border>
+            <GroupBox
+                Header="Настройки"
+                Margin="77,80"
+                UseLayoutRounding="True" Padding="10,10,10,10">
+            </GroupBox>
+        </Border>
+        <Button
+                Style="{StaticResource MaterialDesignRaisedLightButton}"
+                Width="200" Height="52" Click="NewLoadFile"
+                ToolTip="Resource name: MaterialDesignRaisedLightButton"
+                Content="Файл загрузки" Margin="97,129,403,419" FontSize="16" FontWeight="Normal" FontFamily="Arial Black" />
+        <TextBox
+            x:Name="LoadFileBlock"
+            materialDesign:HintAssist.Hint="Введите путь к файлу"
+            materialDesign:HintAssist.HelperTextFontSize="16" Margin="322,129,94,419" VerticalContentAlignment="Center" FontSize="25" />
+        <Button
+            Style="{StaticResource MaterialDesignRaisedLightButton}"
+            Width="200" Height="52" Click="NewSaveFile"
+            ToolTip="Resource name: MaterialDesignRaisedLightButton"
+            Content="Файл сохранения" Margin="97,208,403,340" FontSize="16" FontWeight="Normal" FontFamily="Arial Black" />
+        <TextBox
+            x:Name="SaveFileBlock"
+            materialDesign:HintAssist.Hint="Введите путь к файлу"
+            materialDesign:HintAssist.HelperTextFontSize="16" Margin="322,208,94,340" VerticalContentAlignment="Center" FontSize="25" />
+        <Button
+            Style="{StaticResource MaterialDesignRaisedLightButton}" Height="52" Click="SaveProperts"
+            ToolTip="Resource name: MaterialDesignRaisedLightButton"
+            Content="Сохранить изменения" Margin="222,414,222,94" FontSize="16" FontWeight="Normal" FontFamily="Arial Black" />
+    </Grid>
+</Page>

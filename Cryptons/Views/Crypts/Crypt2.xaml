@@ -1,0 +1,96 @@
+﻿<Page x:Class="Cryptons.Views.Crypts.Crypt2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Cryptons.Views.Crypts"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="700"
+      Title="Crypt2" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="#12182C"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+
+    <Grid>
+        <Border>
+            <GroupBox
+                Header="Шифр Винжера" BorderThickness="5"
+                Margin="77,37,77,44"
+                UseLayoutRounding="True" Padding="10,10,10,10">
+            </GroupBox>
+        </Border>
+
+
+        <TextBox
+            Style="{StaticResource MaterialDesignOutlinedTextBox}" x:Name="text_do"
+            Margin="100,134,100,0" Height="132" materialDesign:HintAssist.Background="#12182C"
+            materialDesign:HintAssist.Hint="Введите исходный текст или загрузите из файла"
+            TextWrapping="Wrap"
+            MinWidth="280"
+            AcceptsReturn="True"
+            VerticalScrollBarVisibility="Auto"
+            SpellCheck.IsEnabled="True"
+            VerticalAlignment="Top" />
+        <TextBox
+            Style="{StaticResource MaterialDesignOutlinedTextBox}" x:Name="text_po"
+            materialDesign:HintAssist.Hint="В этом окне выведется результат выполненой операции"
+            materialDesign:HintAssist.Background="#12182C"
+            Margin="100,283,100,0" 
+            Height="132" 
+            TextWrapping="Wrap"
+            MinWidth="280"
+            AcceptsReturn="True"
+            VerticalScrollBarVisibility="Auto"
+            SpellCheck.IsEnabled="True"
+            VerticalAlignment="Top" />
+        <TextBox
+            x:Name="key_word"
+            materialDesign:HintAssist.Hint="Введите ключ-слово"
+            materialDesign:HintAssist.HelperTextFontSize="16" 
+            Margin="100,433,341,115" VerticalContentAlignment="Center" FontSize="25" />
+
+        <Button
+            Style="{StaticResource MaterialDesignRaisedLightButton}" Height="50"
+            ToolTip="Resource name: MaterialDesignRaisedButton"
+            Content="Шифровать" Margin="100,490,489,60" Click="button2_Click" />
+        <Button
+            Style="{StaticResource MaterialDesignRaisedLightButton}" Height="50"
+            ToolTip="Resource name: MaterialDesignRaisedButton"
+            Content="Дешифровать" Margin="216,490,341,60" Click="button3_Click" />
+        <Button
+            Style="{StaticResource MaterialDesignRaisedLightButton}" Height="50"
+            ToolTip="Resource name: MaterialDesignRaisedButton"
+            Content="Загрузить данные из файла" Margin="364,433,100,117" Click="Button_Click_3" />
+        <Button
+            Style="{StaticResource MaterialDesignRaisedLightButton}" Height="50"
+            ToolTip="Resource name: MaterialDesignRaisedButton"
+            Content="Сохранить данные в файл" Margin="364,490,100,60" Click="Button_Click_4" />
+        <Button
+            Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}"
+            Margin="563,295,111,279" Height="Auto" Width="Auto" Click="Button_Click_2">
+            <materialDesign:PackIcon Kind="ArrowTop" />
+        </Button>
+
+        <StackPanel
+            Orientation="Horizontal"
+            Width="500" Height="50"
+            Margin="100,70,250,0" VerticalAlignment="Top">
+            <RadioButton
+                x:Name="radioButton1"
+                Style="{StaticResource MaterialDesignTabRadioButton}"
+                Margin="4"
+                IsChecked="True"
+                Content="Гамирование" />
+            <RadioButton
+                x:Name="radioButton2"
+                Style="{StaticResource MaterialDesignTabRadioButton}"
+                Margin="4"
+                IsChecked="False"
+                Content="Шифр Виженера" />
+        </StackPanel>
+    </Grid>
+</Page>

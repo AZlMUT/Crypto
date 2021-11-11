@@ -1,0 +1,80 @@
+﻿<Page x:Class="Cryptons.Views.Crypts.Crypt3"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Cryptons.Views.Crypts"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="700"
+      Title="Crypt3" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="#12182C"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+
+    <Grid>
+        <Grid>
+            <Border>
+                <GroupBox
+                Header="Шифр Перестановки" BorderThickness="5"
+                Margin="77,37,77,44"
+                UseLayoutRounding="True" Padding="10,10,10,10">
+                </GroupBox>
+            </Border>
+
+
+            <TextBox
+            Style="{StaticResource MaterialDesignOutlinedTextBox}" x:Name="text_do"
+            Margin="100,95,100,0" Height="150" materialDesign:HintAssist.Background="#12182C"
+            materialDesign:HintAssist.Hint="Введите исходный текст или загрузите из файла"
+            TextWrapping="Wrap"
+            MinWidth="280"
+            AcceptsReturn="True"
+            VerticalScrollBarVisibility="Auto"
+            SpellCheck.IsEnabled="True"
+            VerticalAlignment="Top" />
+            <TextBox
+            Style="{StaticResource MaterialDesignOutlinedTextBox}" x:Name="text_po"
+            materialDesign:HintAssist.Hint="В этом окне выведется результат выполненой операции"
+            materialDesign:HintAssist.Background="#12182C"
+            Margin="100,265,100,0" 
+            Height="150" 
+            TextWrapping="Wrap"
+            MinWidth="280"
+            AcceptsReturn="True"
+            VerticalScrollBarVisibility="Auto"
+            SpellCheck.IsEnabled="True"
+            VerticalAlignment="Top" />
+            <TextBox
+            x:Name="textKey" KeyDown="KeyDownText"
+            materialDesign:HintAssist.Hint="Введите ключ: 5 3 4 1"
+            materialDesign:HintAssist.HelperTextFontSize="16" 
+            Margin="100,433,341,115" VerticalContentAlignment="Center" FontSize="25" />
+
+            <Button
+            Style="{StaticResource MaterialDesignRaisedLightButton}" Height="50"
+            ToolTip="Resource name: MaterialDesignRaisedButton"
+            Content="Шифровать" Margin="100,490,489,60" Click="Button_Click" />
+            <Button
+            Style="{StaticResource MaterialDesignRaisedLightButton}" Height="50"
+            ToolTip="Resource name: MaterialDesignRaisedButton"
+            Content="Дешифровать" Margin="216,490,341,60" Click="Button_Click_1" />
+            <Button
+            Style="{StaticResource MaterialDesignRaisedLightButton}" Height="50"
+            ToolTip="Resource name: MaterialDesignRaisedButton"
+            Content="Загрузить данные из файла" Margin="364,433,100,117" Click="Button_Click_3" />
+            <Button
+            Style="{StaticResource MaterialDesignRaisedLightButton}" Height="50"
+            ToolTip="Resource name: MaterialDesignRaisedButton"
+            Content="Сохранить данные в файл" Margin="364,490,100,60" Click="Button_Click_4" />
+            <Button
+            Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}"
+            Margin="562,278,112,296" Height="Auto" Width="Auto" Click="Button_Click_2">
+                <materialDesign:PackIcon Kind="ArrowTop" />
+            </Button>
+        </Grid>
+    </Grid>
+</Page>

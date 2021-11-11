@@ -1,0 +1,54 @@
+﻿<Page x:Class="Cryptons.Views.Crypts.Crypt5"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Cryptons.Views.Crypts"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="700"
+      Title="Crypt5" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="#12182C"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+
+    <Grid>
+
+        <GroupBox
+            Header="QR-код" BorderThickness="5"
+            Margin="186,29,186,52"
+            UseLayoutRounding="True" Padding="10,10,10,10">
+            <Border BorderThickness="10" BorderBrush="White" Margin="0,0,0,165" Width="298" CornerRadius="10" Background="AliceBlue">
+                <Image Height="278" Width="278" VerticalAlignment="Top"  x:Name="QR_Code"/>
+            </Border>
+        </GroupBox>
+
+        <TextBox
+            Style="{StaticResource MaterialDesignOutlinedTextBox}" x:Name="text_do"
+            Margin="201,390,200,0" Height="66" materialDesign:HintAssist.Background="#12182C"
+            materialDesign:HintAssist.Hint="Введите исходный текст"
+            VerticalAlignment="Top" TextWrapping="WrapWithOverflow" />
+
+        <Button
+            Style="{StaticResource MaterialDesignRaisedLightButton}" Height="32"
+            ToolTip="Resource name: MaterialDesignRaisedButton"
+            Content="Создать QR-код" Margin="201,465,352,103" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Width="147" />
+        <Button
+            Style="{StaticResource MaterialDesignRaisedLightButton}" Height="32"
+            ToolTip="Resource name: MaterialDesignRaisedButton"
+            Content="Расшифровать" Margin="201,502,352,66" Click="Button_Click1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="147" />
+        <Button
+            Style="{StaticResource MaterialDesignRaisedLightButton}" Height="32"
+            ToolTip="Resource name: MaterialDesignRaisedButton"
+            Content="Загрузить" Margin="353,465,200,103" Click="Button_Click2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="147" />
+        <Button
+            Style="{StaticResource MaterialDesignRaisedLightButton}" Height="32"
+            ToolTip="Resource name: MaterialDesignRaisedButton"
+            Content="Сохранить" Margin="353,502,200,66" Click="Button_Click3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="147" />
+
+
+    </Grid>
+</Page>

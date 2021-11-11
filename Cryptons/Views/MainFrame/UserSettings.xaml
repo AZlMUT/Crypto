@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Cryptons.Views.MainFrame" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+      x:Class="Cryptons.Views.MainFrame.UserSettings"
+      mc:Ignorable="d" Title="UserSetting" 
+      Height="650" Width="1000">
+    <Grid>
+        <materialDesign:Card 
+            Margin="200,50,200,50" 
+            materialDesign:ShadowAssist.ShadowDepth="Depth2" Background="#FF172138"
+            materialDesign:ShadowAssist.ShadowEdges="Bottom,Right" Padding="32">
+            <Grid>
+                <Image Height="205" Margin="165,10,166,0"
+                       VerticalAlignment="Top" x:Name="UserAvatar" Source="/Cryptons;component/Data/icon/avatar.jpg" >
+                    <Image.OpacityMask>
+                        <RadialGradientBrush>
+                            <RadialGradientBrush.GradientStops>
+                                <GradientStop Offset="1" Color="Black"/>
+                                <GradientStop Offset="1" Color="Transparent"/>
+                            </RadialGradientBrush.GradientStops>
+                        </RadialGradientBrush>
+                    </Image.OpacityMask>
+                </Image>
+
+
+                <TextBox x:Name="NameTextBox" Foreground="White"
+                         materialDesign:HintAssist.Hint="Имя"
+                         Margin="165,300,166,159" FontFamily="Segoe UI Black" FontSize="14">
+                </TextBox>
+                <TextBox x:Name="FirstnameTextBox" 
+                         materialDesign:HintAssist.Hint="Фамилия"
+                         Margin="165,332,166,127" FontFamily="Segoe UI Black" Foreground="White">
+                </TextBox>
+                <ComboBox
+                    Margin="165,364,166,97" x:Name="GroupBox"
+                    materialDesign:HintAssist.Hint="Група"
+                    IsEditable="False" Foreground="White" FontFamily="Segoe UI Black">
+                    <ComboBoxItem Content="ПЗ-17-1/9" />
+                    <ComboBoxItem Content="ПЗ-18-1/9" />
+                    <ComboBoxItem Content="ПЗ-19-1/9" />
+                    <ComboBoxItem Content="ПЗ-20-1/9" />
+                </ComboBox>
+                <TextBox x:Name="LoginTextBox" Foreground="White"
+                    materialDesign:HintAssist.Hint="Логин"
+                    Margin="165,228,166,231" FontFamily="Segoe UI Black" FontSize="14"/>
+                <PasswordBox
+                    x:Name="PasswordBox" Margin="165,255,166,204"
+                    materialDesign:HintAssist.Hint="Пароль" Foreground="White"
+                    materialDesign:TextFieldAssist.HasClearButton="True"
+                    FontFamily="Segoe UI Black" FontSize="14"/>
+
+                <RepeatButton Content="Сохранить изменения" 
+                    ToolTip="Resource name: MaterialDesignRaisedButton" Margin="165,433,166,21" Click="RepeatButton_Click"/>
+
+
+                
+            </Grid>
+        </materialDesign:Card>
+    </Grid>
+</Page>

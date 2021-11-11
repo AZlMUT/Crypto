@@ -1,0 +1,87 @@
+﻿<Page x:Class="Cryptons.Views.HelpFrame.Help3"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Cryptons.Views.HelpFrame"
+      mc:Ignorable="d" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      d:DesignHeight="3000" d:DesignWidth="760"
+      Title="Help2">
+
+    <Grid>
+        <ScrollViewer Background="#FF7E96FF">
+            <RichTextBox IsReadOnly="True"
+            HorizontalAlignment="Left" 
+            Margin="0,0,0,0" Padding="50"
+            VerticalAlignment="Top" x:Name="Rich"
+            Width="740" Foreground="Black" 
+            FontFamily="Segoe UI Black" FontSize="16" Height="3087">
+
+                <FlowDocument>
+                    <Paragraph TextAlignment="Center" FontSize="40" Margin="10">
+                        Шифр Перестановки
+                    </Paragraph>
+
+                    <Paragraph TextAlignment="Left" FontSize="20" Margin="10">
+                        1) перед вами главное окно
+                    </Paragraph>
+
+                    <BlockUIContainer>
+                        <Image Source="/Cryptons;component/Data/HelpImage/help3/1.PNG" Width="600"/>
+                    </BlockUIContainer>
+
+                    <Paragraph/>
+
+
+                    <Paragraph TextAlignment="Left" FontSize="20" Margin="10">
+                        2) Введите текст который необходимо зашифровать или расшифровать. Смотрететь пример - рисунок 2.
+                    </Paragraph>
+                    <BlockUIContainer>
+                        <Image Width="600" Source="/Cryptons;component/Data/HelpImage/help3/2.PNG" Height="auto"/>
+                    </BlockUIContainer>
+                    <Paragraph TextAlignment="Center" FontSize="20" Margin="10">
+                        Рис 2 - Ввод необходимого текста
+                    </Paragraph>
+                    <Paragraph/>
+
+
+
+                    <Paragraph TextAlignment="Left" FontSize="20" Margin="10">
+                        3) Введите ключ в виде четырёх-значного числа. Смотрететь пример - рисунок 3.
+                    </Paragraph>
+                    <BlockUIContainer>
+                        <Image Width="600" Source="/Cryptons;component/Data/HelpImage/help3/3.PNG" Height="auto"/>
+                    </BlockUIContainer>
+                    <Paragraph TextAlignment="Center" FontSize="20" Margin="10">
+                        Рис 3 - Ввод необходимого ключа
+                    </Paragraph>
+                    <Paragraph/>
+
+                    <Paragraph TextAlignment="Left" FontSize="20" Margin="10">
+                        4) Нажмите кнопку зашифровать .Смотрететь пример - рисунок 4.
+                    </Paragraph>
+                    <BlockUIContainer>
+                        <Image Width="600" Source="/Cryptons;component/Data/HelpImage/help3/4.PNG" Height="auto"/>
+                    </BlockUIContainer>
+                    <Paragraph TextAlignment="Center" FontSize="20" Margin="10">
+                        Рис 4 - Шифрование
+                    </Paragraph>
+                    <Paragraph/>
+
+                    <Paragraph TextAlignment="Left" FontSize="20" Margin="10">
+                        4) Вставте текст который нужно дешифровать в строку исходного текста, введите ключ и нажмите кнопку дешифровать .Смотрететь пример - рисунок 5.
+                    </Paragraph>
+                    <BlockUIContainer>
+                        <Image Width="600" Source="/Cryptons;component/Data/HelpImage/help3/4.PNG" Height="auto"/>
+                    </BlockUIContainer>
+                    <Paragraph TextAlignment="Center" FontSize="20" Margin="10">
+                        Рис 5 - Дешифрование
+                    </Paragraph>
+                    <Paragraph/>
+
+                </FlowDocument>
+            </RichTextBox>
+        </ScrollViewer>
+    </Grid>
+</Page>

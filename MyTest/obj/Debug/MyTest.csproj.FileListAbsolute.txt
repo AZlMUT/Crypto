@@ -1,0 +1,17 @@
+D:\Diplom\DIPLOMS\Cryptos\MyTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Diplom\DIPLOMS\Cryptos\MyTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Diplom\DIPLOMS\Cryptos\MyTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Diplom\DIPLOMS\Cryptos\MyTest\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+D:\Diplom\DIPLOMS\Cryptos\MyTest\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+D:\Diplom\DIPLOMS\Cryptos\MyTest\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Diplom\DIPLOMS\Cryptos\MyTest\bin\Debug\MyTest.dll
+D:\Diplom\DIPLOMS\Cryptos\MyTest\bin\Debug\MyTest.pdb
+D:\Diplom\DIPLOMS\Cryptos\MyTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Diplom\DIPLOMS\Cryptos\MyTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Diplom\DIPLOMS\Cryptos\MyTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Diplom\DIPLOMS\Cryptos\MyTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Diplom\DIPLOMS\Cryptos\MyTest\obj\Debug\MyTest.csprojAssemblyReference.cache
+D:\Diplom\DIPLOMS\Cryptos\MyTest\obj\Debug\MyTest.csproj.CoreCompileInputs.cache
+D:\Diplom\DIPLOMS\Cryptos\MyTest\obj\Debug\MyTest.csproj.CopyComplete
+D:\Diplom\DIPLOMS\Cryptos\MyTest\obj\Debug\MyTest.dll
+D:\Diplom\DIPLOMS\Cryptos\MyTest\obj\Debug\MyTest.pdb

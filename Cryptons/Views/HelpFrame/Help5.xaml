@@ -1,0 +1,108 @@
+﻿<Page x:Class="Cryptons.Views.HelpFrame.Help5"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Cryptons.Views.HelpFrame"
+      mc:Ignorable="d" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      d:DesignHeight="2202" d:DesignWidth="760
+      
+      "
+      Title="Help5">
+
+    <Grid Margin="0,0,0,-2626">
+        <ScrollViewer Background="#FF7E96FF" Margin="10,-10,-10,10">
+            <RichTextBox IsReadOnly="True"
+            HorizontalAlignment="Left" 
+            Margin="0,0,0,0" Padding="50"
+            VerticalAlignment="Top" x:Name="Rich"
+            Width="740" Foreground="Black" 
+            FontFamily="Segoe UI Black" FontSize="16" Height="4873">
+
+                <FlowDocument>
+                    <Paragraph TextAlignment="Center" FontSize="40" Margin="10">
+                        QR код
+                    </Paragraph>
+
+                    <Paragraph TextAlignment="Left" FontSize="20" Margin="10">
+                        1) перед вами главное окно
+                    </Paragraph>
+
+                    <BlockUIContainer>
+                        <Image Width="600" Source="/Cryptons;component/Data/HelpImage/help5/1.PNG" Height="auto"/>
+                    </BlockUIContainer>
+
+                    <Paragraph TextAlignment="Center" FontSize="20" Margin="10">
+                        Рис 1 - главное окно
+                    </Paragraph>
+
+                    <Paragraph/>
+
+
+                    <Paragraph TextAlignment="Left" FontSize="20" Margin="10">
+                        2) Введите текст который необходимо зашифровать . Смотрететь пример - рисунок 2.
+                    </Paragraph>
+                    <BlockUIContainer>
+                        <Image Width="600" Source="/Cryptons;component/Data/HelpImage/help5/2.PNG" Height="auto"/>
+                    </BlockUIContainer>
+                    <Paragraph TextAlignment="Center" FontSize="20" Margin="10">
+                        Рис 2 - Ввод необходимого текста
+                    </Paragraph>
+                    
+                    
+                    <Paragraph/>
+                    <Paragraph TextAlignment="Left" FontSize="20" Margin="10">
+                        3) Нажмите кнопку "Создать QR-код". Смотрететь пример - рисунок 3.
+                    </Paragraph>
+                    <BlockUIContainer>
+                        <Image Width="600" Source="/Cryptons;component/Data/HelpImage/help5/3.PNG" Height="auto"/>
+                    </BlockUIContainer>
+                    <Paragraph TextAlignment="Center" FontSize="20" Margin="10">
+                        Рис 3 - Создание QR-кода
+                    </Paragraph>
+                    
+                    
+                    <Paragraph>
+                        </Paragraph>
+                            <Paragraph TextAlignment="Left" FontSize="20" Margin="10">
+                        4) Нажмите кнопку "Сохранить QR-код". Смотрететь пример - рисунок 4.
+                    </Paragraph>
+                    <BlockUIContainer>
+                        <Image Width="600" Source="/Cryptons;component/Data/HelpImage/help5/3.PNG" Height="auto"/>
+                    </BlockUIContainer>
+                    <Paragraph TextAlignment="Center" FontSize="20" Margin="10">
+                        Рис 4 - Сохранение QR-кода
+                    </Paragraph>
+                    <Paragraph/>
+
+                    <Paragraph>
+                    </Paragraph>
+                    <Paragraph TextAlignment="Left" FontSize="20" Margin="10">
+                        5) Нажмите кнопку "Загрузить QR-код". Смотрететь пример - рисунок 5.
+                    </Paragraph>
+                    <BlockUIContainer>
+                        <Image Width="600" Source="/Cryptons;component/Data/HelpImage/help5/3.PNG" Height="auto"/>
+                    </BlockUIContainer>
+                    <Paragraph TextAlignment="Center" FontSize="20" Margin="10">
+                        Рис 5 - Загрузка QR-кода
+                    </Paragraph>
+
+
+                    <Paragraph></Paragraph>
+                    <Paragraph TextAlignment="Left" FontSize="20" Margin="10">
+                        6) Нажмите кнопку "Расшифрование QR-код". Смотрететь пример - рисунок 6.
+                    </Paragraph>
+                    <BlockUIContainer>
+                        <Image Width="600" Source="/Cryptons;component/Data/HelpImage/help5/3.PNG" Height="auto"/>
+                    </BlockUIContainer>
+                    <Paragraph TextAlignment="Center" FontSize="20" Margin="10">
+                        Рис 6 - Расшифровка QR-кода
+                    </Paragraph>
+                    <Paragraph/>
+
+                </FlowDocument>
+            </RichTextBox>
+        </ScrollViewer>
+    </Grid>
+</Page>
